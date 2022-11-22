@@ -5,7 +5,7 @@ import { Role } from './roles.model';
 
 
 
-@Table({ tableName: 'users' , createdAt:false, updatedAt:false})
+@Table({ tableName: 'user-roles' , createdAt:false, updatedAt:false})
 export class UserRoles extends Model<UserRoles>{
     @ApiProperty({ example: '1', description: 'Unique identifier' })
     @Column({ type: DataType.INTEGER, unique: true, autoIncrement: true, primaryKey: true })
