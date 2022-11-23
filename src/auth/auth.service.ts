@@ -44,7 +44,7 @@ export class AuthService {
         }
         const passwordCompare = await bcrypt.compare(userDto.password, user.password);
         if (!passwordCompare) {
-            throw new UnauthorizedException({ message: 'The password is ircorrect' });
+            throw new UnauthorizedException({ message: 'The password is incorrect' });
         }
         return user;
     }
